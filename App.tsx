@@ -5,15 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "space-around",
-          alignItems: "center",
-          width: "100%",
-          marginBottom: 10,
-        }}
-      >
+      <View style={styles.flexRow}>
         <Image
           source={require("./assets/images/girl-profile-unsplash.jpg")}
           style={{ width: 40, height: 40, borderRadius: 50 }}
@@ -28,19 +20,24 @@ export default function App() {
           style={{ width: 30, height: 30 }}
         />
       </View>
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "space-around",
-          alignItems: "center",
-          width: "100%",
-        }}
-      >
+      <View style={{ ...styles.flexRow, marginBottom: 20 }}>
         <Text style={styles.bubble}>Playlists</Text>
         <Text style={styles.bubble}>Artists</Text>
         <Text style={styles.bubble}>Albums</Text>
         <Text style={styles.bubble}>Artists</Text>
         <Text style={styles.bubble}>Downloaded</Text>
+      </View>
+      <View style={styles.flexRow}>
+        <Image
+          source={require("./assets/images/sort-arrows.png")}
+          style={{ width: 15, height: 15 }}
+        />
+        <Text style={{ color: "white", fontSize: 13 }}>Recents</Text>
+        <Text> </Text>
+        <Image
+          source={require("./assets/images/white-squares.png")}
+          style={{ width: 20, height: 20 }}
+        />
       </View>
     </View>
   );
@@ -52,6 +49,14 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
     backgroundColor: "black",
     alignItems: "center",
+  },
+
+  flexRow: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    width: "100%",
+    marginBottom: 10,
   },
 
   titleText: {
