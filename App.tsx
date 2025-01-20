@@ -48,7 +48,7 @@ export default function App() {
       </View>
 
 /* Playlist: Liked Songs */
-      <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{marginTop: 10, flexDirection: "row", alignItems: "flex-start", marginLeft: 10}}>
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
           <Image
             source={require("./assets/images/playlist_cover_liked.png")}
@@ -62,7 +62,7 @@ export default function App() {
       </View>
 
 /* Playlist: New Episodes */
-      <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{marginTop: 10, flexDirection: "row", alignItems: "flex-start", marginLeft: 10}}>
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
           <Image
             source={require("./assets/images/playlist_cover_new_episodes.png")}
@@ -76,7 +76,7 @@ export default function App() {
       </View>
 
 /* Playlist: Your Episodes */
-      <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{marginTop: 10, flexDirection:"row", marginLeft: 10}}>
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
           <Image
             source={require("./assets/images/playlist_cover_your_episodes.png")}
@@ -90,7 +90,7 @@ export default function App() {
       </View>
 
 /* Playlist: Deep Focus */
- <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{marginTop: 10, flexDirection:"row", marginLeft: 10}}>
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
           <Image
             source={require("./assets/images/playlist_cover_4.jpg")}
@@ -104,7 +104,7 @@ export default function App() {
       </View>
 
 /* Playlist: Discover Weekly*/
- <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{marginTop: 10, flexDirection:"row", marginLeft: 10}}>
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
           <Image
             source={require("./assets/images/playlist_cover_5.png")}
@@ -118,7 +118,7 @@ export default function App() {
       </View>
 
 /* Playlist: Nothing much happens: bedtime stories t... */
- <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{marginTop: 10, flexDirection:"row", marginLeft: 10}}>
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
           <Image
             source={require("./assets/images/playlist_cover_6.jpeg")}
@@ -132,7 +132,7 @@ export default function App() {
       </View>
 
 /* Playlist: EPIC: The Musical */
- <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{marginTop: 10, flexDirection:"row", marginLeft: 10}}>
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
           <Image
             source={require("./assets/images/playlist_cover_7.png")}
@@ -144,7 +144,6 @@ export default function App() {
           </View>
         </View>
       </View>
-
 
   /* Currently Playing */
     <View style={{marginTop: 75, marginLeft:0}}>
