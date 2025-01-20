@@ -46,6 +46,105 @@ export default function App() {
           style={{ width: 20, height: 20 }}
         />
       </View>
+
+/* Playlist: Liked Songs */
+      <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
+          <Image
+            source={require("./assets/images/playlist_cover_liked.png")}
+            style={{ width: 55, height: 55, borderRadius: 5 }}
+          />
+          <View>
+          <Text style={{ color: "white", fontSize: 15, marginLeft: 10 }}>Liked Songs</Text>
+          <Text style={{ color: "gray", fontSize: 15, marginLeft: 10 }}>Playlist - 1289 songs </Text>
+          </View>
+        </View>
+      </View>
+
+/* Playlist: New Episodes */
+      <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
+          <Image
+            source={require("./assets/images/playlist_cover_new_episodes.png")}
+            style={{ width: 55, height: 55, borderRadius: 5 }}
+          />
+          <View>
+          <Text style={{ color: "white", fontSize: 15, marginLeft: 10 }}>New Episodes</Text>
+          <Text style={{ color: "gray", fontSize: 15, marginLeft: 10 }}>Updated today</Text>
+          </View>
+        </View>
+      </View>
+
+/* Playlist: Your Episodes */
+      <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
+          <Image
+            source={require("./assets/images/playlist_cover_your_episodes.png")}
+            style={{ width: 55, height: 55, borderRadius: 5 }}
+          />
+          <View>
+          <Text style={{ color: "white", fontSize: 15, marginLeft: 10 }}>Your Episodes</Text>
+          <Text style={{ color: "gray", fontSize: 15, marginLeft: 10 }}>Saved & downloaded episodes</Text>
+          </View>
+        </View>
+      </View>
+
+/* Playlist: Deep Focus */
+ <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
+          <Image
+            source={require("./assets/images/playlist_cover_4.jpg")}
+            style={{ width: 55, height: 55, borderRadius: 5 }}
+          />
+          <View>
+          <Text style={{ color: "white", fontSize: 15, marginLeft: 10 }}>Deep Focus</Text>
+          <Text style={{ color: "gray", fontSize: 15, marginLeft: 10 }}>Playlist - Spotify</Text>
+          </View>
+        </View>
+      </View>
+
+/* Playlist: Discover Weekly*/
+ <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
+          <Image
+            source={require("./assets/images/playlist_cover_5.png")}
+            style={{ width: 55, height: 55, borderRadius: 5 }}
+          />
+          <View>
+          <Text style={{ color: "white", fontSize: 15, marginLeft: 10 }}>Discover Weekly</Text>
+          <Text style={{ color: "gray", fontSize: 15, marginLeft: 10 }}>Playlist - Made for Louise Dinsmore</Text>
+          </View>
+        </View>
+      </View>
+
+/* Playlist: Nothing much happens: bedtime stories t... */
+ <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
+          <Image
+            source={require("./assets/images/playlist_cover_6.jpeg")}
+            style={{ width: 55, height: 55, borderRadius: 5 }}
+          />
+          <View>
+          <Text style={{ color: "white", fontSize: 15, marginLeft: 10 }}>Nothing much happens: bedtime stories t...</Text>
+          <Text style={{ color: "gray", fontSize: 15, marginLeft: 10 }}>Podcast - iBedtimePodcast </Text>
+          </View>
+        </View>
+      </View>
+
+/* Playlist: EPIC: The Musical */
+ <View style={{marginTop: 10, marginLeft: -180}}>
+      <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7 }}>
+          <Image
+            source={require("./assets/images/playlist_cover_7.png")}
+            style={{ width: 55, height: 55, borderRadius: 5 }}
+          />
+          <View>
+          <Text style={{ color: "white", fontSize: 15, marginLeft: 10 }}>EPIC: The Musical</Text>
+          <Text style={{ color: "gray", fontSize: 15, marginLeft: 10 }}>Playlist - Random </Text>
+          </View>
+        </View>
+      </View>
+
     </View>
   );
 }
@@ -56,6 +155,7 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
     backgroundColor: "black",
     alignItems: "center",
+    marginTop: -70,
   },
 
   flexRow: {
