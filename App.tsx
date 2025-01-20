@@ -145,7 +145,40 @@ export default function App() {
         </View>
       </View>
 
-    </View>
+
+  /* Currently Playing */
+    <View style={{marginTop: 75, marginLeft:0}}>
+      <View style={{height: 55, width: 410}}>
+        <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7, backgroundColor: "#701C50", borderRadius:5,
+          paddingTop: 7, paddingBottom: 7, paddingLeft: 10}}>
+            <Image
+              source={require("./assets/images/mean_cover.jpg")}
+              style={{ width: 45, height: 45, borderRadius: 5 }}
+            />
+            <View>
+            <Text style={{ color: "white", fontSize: 13, marginLeft: 10 }}>MEAN! (with Noah Kahan)-Remix</Text>
+            <Text style={{ color: "gray", fontSize: 12, marginLeft: 10 }}>Madeline The Person </Text>
+            </View>
+            <View>
+              <Image source={require("./assets/images/pink_buttons.png")} style={{ width: 120, height: 50, marginLeft: 15}}/>
+            </View>
+          </View>
+        </View>
+      </View>
+  /* Bottom Buttons */
+    <View style={{marginTop: 20, marginLeft:0}}>
+      <View style={{height: 55, width: 410}}>
+        <View style={{ flexDirection: "column", alignItems: "center", marginBottom: 7, backgroundColor: "#3A3A3A", borderRadius:5, paddingTop: 0}}>
+
+            <Image
+              source={require("./assets/images/bottom_buttons.png")}
+              style={{ width: 410, height: 60}}
+            />
+          </View>
+        </View>
+      </View>
+
+  </View>
   );
 }
 
