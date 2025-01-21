@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Button } from "react-native";
 
 export default function App() {
   return (
@@ -145,8 +145,11 @@ export default function App() {
         </View>
       </View>
 
+/* Alert Button */
+<Button title="Alert" onPress={() => {alert("Button pressed.")}}/>
+
   /* Currently Playing */
-    <View style={{marginTop: 35, marginLeft:0}}>
+    <View style={{marginTop: 5, marginLeft:0}}>
       <View style={{height: 55, width: 410}}>
         <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 7, backgroundColor: "#701C50", borderRadius:5,
           paddingTop: 7, paddingBottom: 7, paddingLeft: 10}}>
